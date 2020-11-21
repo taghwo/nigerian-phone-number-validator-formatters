@@ -1,6 +1,6 @@
 #Installation
 ```sh
-composer require taghwo/nigerian-phone-number-validator-formatter
+composer require taghwo/nigerian-phone-number-validator-formatters
 ```
 #include package your PHP file
 ```sh
@@ -65,4 +65,15 @@ PhoneNumber::setDigits('14')
             ->getPrefix()//070
             ->splitPhoneNumber(null, 3);//[070,000,000,00];
 
+```
+
+#Extra
+```
+Running quick checks on phone number, returns true and false
+```
+```
+use Taghwo\PhoneNumber\Rule\Check;
+
+$isValid = Check::verifyPhoneNumber('000007060499168');//❌false
+$isIntFormat = Check::verifyPhoneNumberIsIntFormat('007060499168');//❌False
 ```
