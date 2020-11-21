@@ -1,4 +1,4 @@
-###Usage
+#Installation
 ```sh
     composer require taghwo/nigerian-phone-number-validator-formatter
 ```
@@ -12,6 +12,36 @@
 use Taghwo\PhoneNumber\PhoneNumberRequest;
 ```
 
+
+##Available methods
+```
+setDigits() accepts single or range of digits(min_range, max_range). ('14') or ('11','14)
+```
+```
+setDigits() accepts single or range of digits(min_range, max_range). ('14') or ('11','14)
+```
+```
+setDigits() accepts single or range of digits(min_range, max_range). ('14') or ('11','14)
+```
+validateWithRange() will validate if phone number supplied falls within range and validateStrict() throws exception if phone number supplied is === single number in setDigits()
+```
+```
+getCleanNumber() returns clean phone number
+```
+```
+formatToIntPhoneNumber() prefixes 234 on phonenumber if it does not have it
+```
+```
+getPrefix() fetches phonenumber prefix
+```
+```
+splitPhoneNumber() splits phone number into chunks based on criterai supplied, (null, 4)
+```
+```
+setPhoneNumber() Note only use when using the static call on use Taghwo\PhoneNumber\PhoneNumber;
+```
+
+#Usage
 ```sh
 $phonenumber = new PhoneNumberRequest('/--dff/s07000000000');
          
