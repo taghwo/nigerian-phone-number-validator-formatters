@@ -1,6 +1,6 @@
 <?php
 
-namespace Taghwo\PhoneNumber\Validator;
+namespace Taghwo\PhoneNumber;
 
 class Factory
 {
@@ -8,6 +8,11 @@ class Factory
      * @return array
      */
     protected $intPrefix = ['234'];
+
+    /**
+     * @return array
+     */
+    protected $standardPhoneNumberDigits = [MIN_NUMBER,MAX_NUMBER];
     
     /**
      * @return array

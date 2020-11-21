@@ -1,12 +1,10 @@
 <?php
 namespace Taghwo\PhoneNumber\Exception;
 
-use Exception;
+use Taghwo\PhoneNumber\Exception\ExceptionInterface;
 
-class Implementation
+use InvalidArgumentException;
+
+class Implementation extends InvalidArgumentException implements ExceptionInterface
 {
-    public static function fire($message, $code = '')
-    {
-        throw new Exception($message, $code);
-    }
 }
