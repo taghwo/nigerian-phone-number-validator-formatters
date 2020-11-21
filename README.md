@@ -23,6 +23,7 @@ setDigits() accepts single or range of digits(min_range, max_range). ('14') or (
 ```
 setDigits() accepts single or range of digits(min_range, max_range). ('14') or ('11','14)
 ```
+```
 validateWithRange() will validate if phone number supplied falls within range and validateStrict() throws exception if phone number supplied is === single number in setDigits()
 ```
 ```
