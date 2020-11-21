@@ -2,7 +2,7 @@
 ```sh
 composer require taghwo/nigerian-phone-number-validator-formatters
 ```
-#include package your PHP file
+#include package in your PHP file
 ```sh
  require_once "vendor/autoload.php"; 
  ```
